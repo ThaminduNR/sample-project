@@ -1,10 +1,9 @@
 package main;
 
-public class Boy implements DI{
+public class Boy {
     SuperGirl girl;
 
-    @Override
-    public void inject(Girl girl) {
+    public void setGirl(Girl girl){
         this.girl=girl;
     }
 
